@@ -1,0 +1,19 @@
+﻿<Window x:Class="Log4netCore31Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Log4netCore31Sample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="MainWindow_OnClosing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Name="testInfo" Click="TestInfo_OnClick">Append Info</Button>
+        <Button Grid.Column="1" Name="testWarn" Click="TestWarn_OnClick">Append Warn</Button>
+        <Button Grid.Column="2" Name="testError" Click="TestError_OnClick">Append Error</Button>
+    </Grid>
+</Window>
